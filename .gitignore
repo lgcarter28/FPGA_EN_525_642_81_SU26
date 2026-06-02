@@ -82,3 +82,13 @@
 
 */*/bd/*/ip/*/*.tcl
 */*/*/bd/*/ip/*/*.tcl
+
+# Microsoft word
+~$*.doc*
+~$*.dot*
+
+# Word Auto Backup Files
+Backup of *.doc*
+
+# General temporary files
+*.tmp
