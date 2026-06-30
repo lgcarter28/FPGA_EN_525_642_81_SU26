@@ -1,94 +1,79 @@
-# gitignore template for Xilinx Vivado Design Suite
-# website: https://www.xilinx.com/support/download.html
+###############################################################################
+# Vivado Project Files
+###############################################################################
 
-# [home]
+# Ignore generated Vivado build artifacts
+**/*.cache/
+**/*.gen/
+**/*.runs/
+**/*.sim/
+**/*.hw/
+**/*.ip_user_files/
+**/*.tmp/
+**/*.Xil/
+
+###############################################################################
+# Vivado / XSim Simulation Artifacts
+###############################################################################
+
+xsim.dir/
+xsim.ini
+
+*.wdb
+*.wcfg
+
 *.jou
 *.log
-*.debug
-*.str
-*.zip
-*.tmp
-*.rst
-*.os
-*.js
 *.pb
-*.dcp
-*.hwdef
-*.vds
-*.veo
-*.wdf
-*.vdi
-*.dmp
-*.rpx
-*.rpt
-*_stub.v
-*_stub.vhdl
-*_funcsim.v
-*_funcsim.vhdl
-.project
 
-# [dir]
-*.cache
-.metadata
-*.data
-*.ipdefs
-.Xil
-*.sdk
-*.hw
-*.ip_user_files
+compile.bat
+elaborate.bat
+simulate.bat
+*.prj
+*.tcl
+*.rlx
+*.debug
+*.xdb
+*.settings.ini
+Compile_Options.txt
+TempBreakPointFile.txt
 
-### IP synth
-*_synth_*
-*__synthesis_is_complete__*
+###############################################################################
+# Bitstreams and Reports (generated)
+###############################################################################
 
-.jobs
+*.bit
+*.bin
+*.ltx
+*_utilization_*.rpt
+*_clock_utilization_*.rpt
+*_timing_summary*.rpt
+*_drc*.rpt
+*_power*.rpt
 
-### project synth
-**/*.runs/synth*/*.xml
-**/*.runs/synth*/*.txt
-**/*.runs/synth*/*.sh
-**/*.runs/synth*/*.tcl
-**/*.runs/synth*/*.bat
-**/*.runs/synth*/*.xdc
-!**/*.runs/synth*/*utilization*.rpt
+###############################################################################
+# OS / Editor
+###############################################################################
 
-### project impl
-**/*.runs/impl*/*.xml
-**/*.runs/impl*/*.html
-**/*.runs/impl*/*.txt
-**/*.runs/impl*/*.sh
-**/*.runs/impl*/*.tcl
-**/*.runs/impl*/*.bat
-!**/*.runs/impl*/*utilization*.rpt
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
 
-### block design
-*/*/bd/*/hdl
-*/*/*/bd/*/hdl
+###############################################################################
+# Keep source files
+###############################################################################
 
-*/*/bd/*/*.xdc
-*/*/*/bd/*/*.xdc
+!**/*.vhd
+!**/*.vhdl
+!**/*.xdc
+!**/*.xpr
+!**/*.pdf
 
-*/*/bd/*/ip/*/*.xdc
-*/*/*/bd/*/ip/*/*.xdc
+###############################################################################
+# Explicitly keep handwritten testbenches
+###############################################################################
 
-*/*/bd/*/ip/*/*/
-*/*/*/bd/*/ip/*/*/
-
-*/*/bd/*/ip/*/*.vhd
-*/*/*/bd/*/ip/*/*.vhd
-
-*/*/bd/*/ip/*/*.xml
-*/*/*/bd/*/ip/*/*.xml
-
-*/*/bd/*/ip/*/*.tcl
-*/*/*/bd/*/ip/*/*.tcl
-
-# Microsoft word
-~$*.doc*
-~$*.dot*
-
-# Word Auto Backup Files
-Backup of *.doc*
-
-# General temporary files
-*.tmp
+!**/*_tb.vhd
+!**/tb/**/*.vhd
