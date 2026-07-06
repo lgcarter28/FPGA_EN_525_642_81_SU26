@@ -7,7 +7,7 @@ This repository contains FPGA coursework, lab submissions, board references, and
 - `module_1/` through `module_14/`: course modules, lecture material, lab assignments, and completed lab work.
 - `utils/rtl/src/`: reusable VHDL building blocks intended to be shared across labs and future projects.
 - `docs/`: board manuals, installation notes, and other general reference material.
-- `deps/`: local third-party board files and constraint references. This directory is ignored by Git.
+- `deps/`: board-file dependencies and local constraint references, including the Digilent XDC submodule and locally maintained XDC variants.
 
 ## Reusable RTL
 
