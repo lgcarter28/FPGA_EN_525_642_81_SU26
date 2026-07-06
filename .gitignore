@@ -1,68 +1,81 @@
 ###############################################################################
-# Vivado Project Files
+# Vivado generated output
 ###############################################################################
 
-# Ignore generated Vivado build artifacts
 **/*.cache/
 **/*.gen/
-**/*.runs/
-**/*.sim/
 **/*.hw/
 **/*.ip_user_files/
+**/*.runs/
+**/*.sim/
 **/*.tmp/
-**/*.Xil/
-
-###############################################################################
-# Vivado / XSim Simulation Artifacts
-###############################################################################
+**/.Xil/
 
 xsim.dir/
 xsim.ini
 
-*.wdb
-*.wcfg
-
 *.jou
 *.log
 *.pb
+*.wdb
+*.wcfg
+*.rlx
+*.debug
+*.xdb
+*.dcp
+*.str
+*.settings.ini
 
 compile.bat
 elaborate.bat
 simulate.bat
-*.prj
-*.tcl
-*.rlx
-*.debug
-*.xdb
-*.settings.ini
 Compile_Options.txt
 TempBreakPointFile.txt
 
 ###############################################################################
-# Bitstreams and Reports (generated)
+# Build products and generated reports
 ###############################################################################
 
 *.bit
 *.bin
 *.ltx
-*_utilization_*.rpt
-*_clock_utilization_*.rpt
-*_timing_summary*.rpt
-*_drc*.rpt
-*_power*.rpt
+*.rpt
+
+# Final lab submission artifacts are part of the coursework record.
+!**/Lab*_*/**/*.bit
+!**/Lab*_*/**/*utilization*.rpt
+!**/Lab*_*/**/*Utilization*.rpt
 
 ###############################################################################
-# OS / Editor
+# Local reference material and scratch space
+###############################################################################
+
+deps/
+**/videos/
+
+###############################################################################
+# OS, editor, and Office temporary files
 ###############################################################################
 
 .DS_Store
 Thumbs.db
 *.swp
 *.swo
+*.bak
+*.bkp
+*.backup
+*~
 .vscode/
+~$*
 
 ###############################################################################
-# Keep source files
+# Archives
+###############################################################################
+
+*.zip
+
+###############################################################################
+# Keep source and coursework artifacts trackable
 ###############################################################################
 
 !**/*.vhd
@@ -70,16 +83,12 @@ Thumbs.db
 !**/*.xdc
 !**/*.xpr
 !**/*.pdf
-
-###############################################################################
-# Explicitly keep handwritten testbenches
-###############################################################################
-
+!**/*.doc
+!**/*.docx
+!**/*.xlsx
+!**/*.md
+!**/*.drawio
 !**/*_tb.vhd
-!**/tb/**/*.vhd
 
-###############################################################################
-# Miscellaneous
-###############################################################################
-
-*.zip
+# Office lock files should stay ignored even though real documents are tracked.
+~$*
