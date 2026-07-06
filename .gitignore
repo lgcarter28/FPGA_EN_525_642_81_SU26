@@ -43,8 +43,7 @@ TempBreakPointFile.txt
 
 # Final lab submission artifacts are part of the coursework record.
 !**/Lab*_*/**/*.bit
-!**/Lab*_*/**/*utilization*.rpt
-!**/Lab*_*/**/*Utilization*.rpt
+!**/Lab*_*/**/*.rpt
 
 ###############################################################################
 # Local reference material and scratch space
