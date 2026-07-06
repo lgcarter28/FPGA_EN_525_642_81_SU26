@@ -49,7 +49,7 @@ TempBreakPointFile.txt
 # Local reference material and scratch space
 ###############################################################################
 
-deps/
+deps/vivado-boards-master/
 **/videos/
 
 ###############################################################################

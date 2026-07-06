@@ -1,0 +1,3 @@
+[submodule "deps/digilent-xdc"]
+	path = deps/digilent-xdc
+	url = https://github.com/Digilent/digilent-xdc.git
